@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CoMute.Web.Models.Dto.CarPool>
+
+@{
+    ViewBag.Title = "JoinedView";
+}
+
+<br />
+<h2 style="align-content:center">Car Pools Joined</h2>
+
+
+<table id="cartable" class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpectedArrivaltime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaysAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tbody>
+    </tbody>
+
+</table>
+
+@section scripts {
+    <script type="text/javascript" src="~/Content/js/CarPoolJoined.js"></script>
+
+}

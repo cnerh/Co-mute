@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "CarPoolRegister";
+}
+
+
+
+
+
+<form id="CarPoolRegister">
+    <h2> Car Pool Register</h2>
+
+    <div id="error" class="row row-margin hidden">
+        <div class="col-md-4 col-md-offset-4 alert alert-danger">
+            <p></p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Departuretime">Departure time</label>
+        <input type="datetime" id="Departuretime" class="form-control" placeholder="Departure time" required>
+    </div>
+
+    <div class="form-group">
+        <label for="ExpectedArrivaltime">Expected Arrival time</label>
+        <input type="datetime" id="ExpectedArrivaltime" class="form-control" placeholder="Expected Arrival time" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Origin">Origin</label>
+        <input type="text" id="Origin" class="form-control" placeholder="Origin" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Daysavailable">Days available</label>
+        <input type="text" id="Daysavailable" class="form-control" placeholder="Days available" >
+    </div>
+
+    <div class="form-group">
+        <label for="Destination">Destination</label>
+        <input type="text" id="Destination" class="form-control" placeholder="Destination" required>
+    </div>
+
+    <div class="form-group">
+        <label for="Availableseats">Available seats</label>
+        <input type="number" id="Availableseats" class="form-control" placeholder="Available seats" required>
+    </div>
+    <div class="form-group">
+        <label for="Owner">Owner</label>
+        <input type="text" id="Owner" class="form-control" placeholder="Owner" required>
+    </div>
+    <div class="form-group">
+        <label for="Notes">Notes</label>
+        <input type="text" id="Notes" class="form-control" placeholder="Notes">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit" id="CarPoolRegister"> Car Pool Register</button>
+    </div>
+</form>
+
+@section scripts {
+    <script type="text/javascript" src="~/Content/js/carpoolregister.js"></script>
+}

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<CoMute.Web.Models.Dto.CarPool>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "CarPoolView";
+    var student = ViewBag.CarPool;
+
+}
+
+<h2>CarPoolView</h2>
+
+<div class="form-group-sm">
+    <label for="Destination">Destination</label>
+    <input type="text" id="Destination" class="form-control" placeholder="Destination" required>
+    <button class="btn btn-primary" type="submit" id="Search">  Search  By Destination  </button>
+
+</div>
+
+<p>
+    @Html.ActionLink("Create new", "CarPoolRegister", "CarPool")
+</p>
+<table id="cartableView" class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpectedArrivaltime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaysAvailable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+
+<tbody>
+</tbody>
+
+</table>
+
+@section scripts {
+    <script type="text/javascript" src="~/Content/js/carpoolview.js"></script>
+   @*<script type="text/javascript" src="~/Content/js/CarPoolSearch.js"></script>*@
+
+}
